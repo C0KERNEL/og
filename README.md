@@ -2,6 +2,8 @@
 
 `og` (short for OpenGraph) is a command-line tool that converts CSV files containing nodes and edges into BloodHound-compatible OpenGraph JSON format.
 
+Built using the [gopengraph](https://github.com/TheManticoreProject/gopengraph) library for BloodHound OpenGraph compatibility.
+
 ## Features
 
 - **Multiple input methods**: Read from stdin (pipeline) or specify files via command-line arguments
@@ -138,6 +140,3 @@ See the `testdata/` directory for example CSV files:
 - `edges1.csv` - MemberOf relationships
 - `edges2.csv` - Permission relationships
 
-## License
-
-This tool uses the [gopengraph](https://github.com/TheManticoreProject/gopengraph) library
