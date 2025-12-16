@@ -1,0 +1,150 @@
+{
+  "graph": {
+    "edges": [
+      {
+        "end": {
+          "match_by": "id",
+          "value": "dept-001"
+        },
+        "kind": "MemberOf",
+        "properties": {
+          "since": "2020-01-15"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "user-001"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "dept-001"
+        },
+        "kind": "MemberOf",
+        "properties": {
+          "since": "2019-06-01"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "user-002"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "dept-002"
+        },
+        "kind": "MemberOf",
+        "properties": {
+          "since": "2021-03-10"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "user-003"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "user-002"
+        },
+        "kind": "CanManage",
+        "properties": {
+          "permission": "admin"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "user-001"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "user-003"
+        },
+        "kind": "CanView",
+        "properties": {
+          "permission": "readonly"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "user-002"
+        }
+      }
+    ],
+    "nodes": [
+      {
+        "id": "dept-003",
+        "kinds": [
+          "Department",
+          "OrgUnit",
+          "ExampleSource"
+        ],
+        "properties": {
+          "department": "Business",
+          "displayname": "Marketing"
+        }
+      },
+      {
+        "id": "user-001",
+        "kinds": [
+          "User",
+          "ExampleSource"
+        ],
+        "properties": {
+          "displayname": "Alice Smith",
+          "email": "alice@example.com"
+        }
+      },
+      {
+        "id": "user-002",
+        "kinds": [
+          "User",
+          "ExampleSource"
+        ],
+        "properties": {
+          "displayname": "Bob Jones",
+          "email": "bob@example.com"
+        }
+      },
+      {
+        "id": "user-003",
+        "kinds": [
+          "User",
+          "ExampleSource"
+        ],
+        "properties": {
+          "displayname": "Charlie Davis",
+          "email": "charlie@example.com"
+        }
+      },
+      {
+        "id": "dept-001",
+        "kinds": [
+          "Department",
+          "OrgUnit",
+          "ExampleSource"
+        ],
+        "properties": {
+          "department": "IT",
+          "displayname": "Engineering"
+        }
+      },
+      {
+        "id": "dept-002",
+        "kinds": [
+          "Department",
+          "OrgUnit",
+          "ExampleSource"
+        ],
+        "properties": {
+          "department": "Business",
+          "displayname": "Sales"
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "source_kind": "ExampleSource"
+  }
+}

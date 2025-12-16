@@ -1,0 +1,4 @@
+id,kinds,displayname,email
+user-001,User,Alice Smith,alice@example.com
+user-002,User,Bob Jones,bob@example.com
+user-003,User,Charlie Davis,charlie@example.com

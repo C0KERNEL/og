@@ -3,47 +3,17 @@ package main
 import (
 	"bufio"
 	"encoding/csv"
-	"encoding/json"
 	"flag"
 	"fmt"
 	"io"
 	"os"
 	"strings"
+
+	gopengraph "github.com/TheManticoreProject/gopengraph"
+	"github.com/TheManticoreProject/gopengraph/edge"
+	"github.com/TheManticoreProject/gopengraph/node"
+	"github.com/TheManticoreProject/gopengraph/properties"
 )
-
-// OpenGraph structures based on BloodHound OpenGraph schema
-
-type NodeReference struct {
-	MatchBy string `json:"match_by"`
-	Value   string `json:"value"`
-}
-
-type Edge struct {
-	Start      NodeReference          `json:"start"`
-	End        NodeReference          `json:"end"`
-	Kind       string                 `json:"kind"`
-	Properties map[string]interface{} `json:"properties,omitempty"`
-}
-
-type Node struct {
-	ID         string                 `json:"id"`
-	Kinds      []string               `json:"kinds"`
-	Properties map[string]interface{} `json:"properties"`
-}
-
-type Graph struct {
-	Nodes []Node `json:"nodes"`
-	Edges []Edge `json:"edges"`
-}
-
-type Metadata struct {
-	SourceKind string `json:"source_kind,omitempty"`
-}
-
-type OpenGraph struct {
-	Graph    Graph    `json:"graph"`
-	Metadata Metadata `json:"metadata"`
-}
 
 type CSVType int
 
@@ -118,16 +88,9 @@ func main() {
 		os.Exit(1)
 	}
 
-	// Create OpenGraph instance
-	graph := &OpenGraph{
-		Graph: Graph{
-			Nodes: []Node{},
-			Edges: []Edge{},
-		},
-		Metadata: Metadata{
-			SourceKind: sourceKind,
-		},
-	}
+	// Create OpenGraph instance using gopengraph library
+	// If sourceKind is empty, we'll use empty string which the library handles
+	graph := gopengraph.NewOpenGraph(sourceKind)
 
 	// Separate nodes and edges
 	var nodeCSVs []*CSVFile
@@ -155,15 +118,16 @@ func main() {
 		processEdgeCSV(graph, csv, nodeIDs)
 	}
 
-	// Export to JSON using standard json.Marshal
-	jsonData, err := json.MarshalIndent(graph, "", "  ")
+	// Export to JSON using gopengraph library's built-in method
+	// includeMetadata is true only if sourceKind is provided
+	jsonData, err := graph.ExportJSON(sourceKind != "")
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error marshaling to JSON: %v\n", err)
 		os.Exit(1)
 	}
 
 	// Output to stdout
-	fmt.Println(string(jsonData))
+	fmt.Println(jsonData)
 }
 
 // parseCSVFromReader reads CSV data from a reader and detects multiple CSV blocks
@@ -243,21 +207,15 @@ func looksLikeNewCSVHeader(line string, currentHeader string) bool {
 		return false
 	}
 
-	// If they have different field counts, might be a new CSV
-	if len(fields1) != len(fields2) {
-		return true
-	}
-
-	// Check if the fields in line look like headers (contain common header names)
-	// and are different from the current header
 	lineLower := strings.ToLower(line)
 	headerLower := strings.ToLower(currentHeader)
 
+	// If it's exactly the same header, skip it (duplicate header from concatenation)
 	if lineLower == headerLower {
-		return false // Same header, probably repeated in concatenation
+		return false // Same header, skip it
 	}
 
-	// Check for distinctive header patterns that differ
+	// Check for distinctive header patterns
 	hasNodeHeaders := strings.Contains(lineLower, "id") && strings.Contains(lineLower, "kinds")
 	hasEdgeHeaders := strings.Contains(lineLower, "start") && strings.Contains(lineLower, "end")
 
@@ -267,6 +225,32 @@ func looksLikeNewCSVHeader(line string, currentHeader string) bool {
 	// If the pattern changed from node to edge or vice versa, it's a new CSV
 	if (hasNodeHeaders && currentHasEdgeHeaders) || (hasEdgeHeaders && currentHasNodeHeaders) {
 		return true
+	}
+
+	// If both look like node headers or both look like edge headers,
+	// but they have different fields, it's likely a new CSV with different columns
+	if (hasNodeHeaders && currentHasNodeHeaders) || (hasEdgeHeaders && currentHasEdgeHeaders) {
+		// Compare the actual field names
+		fields1Lower := make([]string, len(fields1))
+		fields2Lower := make([]string, len(fields2))
+		for i, f := range fields1 {
+			fields1Lower[i] = strings.ToLower(strings.TrimSpace(f))
+		}
+		for i, f := range fields2 {
+			fields2Lower[i] = strings.ToLower(strings.TrimSpace(f))
+		}
+
+		// If they have different numbers of fields, it's a new CSV
+		if len(fields1Lower) != len(fields2Lower) {
+			return true
+		}
+
+		// If any field name differs, it's a new CSV
+		for i := range fields1Lower {
+			if fields1Lower[i] != fields2Lower[i] {
+				return true
+			}
+		}
 	}
 
 	return false
@@ -333,7 +317,7 @@ func detectCSVType(headers []string) CSVType {
 }
 
 // processNodeCSV processes a node CSV and adds nodes to the graph
-func processNodeCSV(graph *OpenGraph, csv *CSVFile, nodeIDs map[string]bool) {
+func processNodeCSV(graph *gopengraph.OpenGraph, csv *CSVFile, nodeIDs map[string]bool) {
 	// Find column indices
 	idIdx := findHeaderIndex(csv.Headers, "id")
 	kindsIdx := findHeaderIndex(csv.Headers, "kinds")
@@ -370,8 +354,8 @@ func processNodeCSV(graph *OpenGraph, csv *CSVFile, nodeIDs map[string]bool) {
 		// Parse kinds (comma-separated)
 		kinds := parseKinds(kindsStr)
 
-		// Create properties from remaining columns
-		props := make(map[string]interface{})
+		// Create properties from remaining columns using gopengraph library
+		props := properties.NewProperties()
 		for i, header := range csv.Headers {
 			if i == idIdx || i == kindsIdx {
 				continue
@@ -380,25 +364,25 @@ func processNodeCSV(graph *OpenGraph, csv *CSVFile, nodeIDs map[string]bool) {
 			if i < len(row) {
 				value := strings.TrimSpace(row[i])
 				if value != "" {
-					props[strings.TrimSpace(header)] = value
+					props.SetProperty(strings.TrimSpace(header), value)
 				}
 			}
 		}
 
-		// Create and add node
-		node := Node{
-			ID:         id,
-			Kinds:      kinds,
-			Properties: props,
+		// Create node using gopengraph library
+		nodeObj, err := node.NewNode(id, kinds, props)
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "Warning: Error creating node %s: %v\n", id, err)
+			continue
 		}
 
-		graph.Graph.Nodes = append(graph.Graph.Nodes, node)
+		graph.AddNode(nodeObj)
 		nodeIDs[id] = true
 	}
 }
 
 // processEdgeCSV processes an edge CSV and adds edges to the graph
-func processEdgeCSV(graph *OpenGraph, csv *CSVFile, nodeIDs map[string]bool) {
+func processEdgeCSV(graph *gopengraph.OpenGraph, csv *CSVFile, nodeIDs map[string]bool) {
 	// Find column indices
 	startIdx := findHeaderIndex(csv.Headers, "start")
 	endIdx := findHeaderIndex(csv.Headers, "end")
@@ -442,8 +426,8 @@ func processEdgeCSV(graph *OpenGraph, csv *CSVFile, nodeIDs map[string]bool) {
 			fmt.Fprintf(os.Stderr, "Warning: Edge references non-existent end node '%s'\n", end)
 		}
 
-		// Create properties from remaining columns
-		props := make(map[string]interface{})
+		// Create properties from remaining columns using gopengraph library
+		props := properties.NewProperties()
 		for i, header := range csv.Headers {
 			if i == startIdx || i == endIdx || i == kindIdx {
 				continue
@@ -452,30 +436,20 @@ func processEdgeCSV(graph *OpenGraph, csv *CSVFile, nodeIDs map[string]bool) {
 			if i < len(row) {
 				value := strings.TrimSpace(row[i])
 				if value != "" {
-					props[strings.TrimSpace(header)] = value
+					props.SetProperty(strings.TrimSpace(header), value)
 				}
 			}
 		}
 
-		// Create and add edge
-		edge := Edge{
-			Start: NodeReference{
-				MatchBy: "id",
-				Value:   start,
-			},
-			End: NodeReference{
-				MatchBy: "id",
-				Value:   end,
-			},
-			Kind: kind,
+		// Create edge using gopengraph library
+		// Note: match_by defaults to "id" in the library
+		edgeObj, err := edge.NewEdge(start, end, kind, props)
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "Warning: Error creating edge: %v\n", err)
+			continue
 		}
 
-		// Only set properties if there are any
-		if len(props) > 0 {
-			edge.Properties = props
-		}
-
-		graph.Graph.Edges = append(graph.Graph.Edges, edge)
+		graph.AddEdge(edgeObj)
 	}
 }
 

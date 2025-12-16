@@ -1,0 +1,3 @@
+start,end,kind,permission
+user-001,user-002,CanManage,admin
+user-002,user-003,CanView,readonly

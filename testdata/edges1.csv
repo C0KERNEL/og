@@ -1,0 +1,4 @@
+start,end,kind,since
+user-001,dept-001,MemberOf,2020-01-15
+user-002,dept-001,MemberOf,2019-06-01
+user-003,dept-002,MemberOf,2021-03-10
