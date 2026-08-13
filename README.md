@@ -1,6 +1,11 @@
-# og - OpenGraph CSV to JSON Converter
+# og - OpenGraph JSON Builder
 
-`og` (short for OpenGraph) is a command-line tool that converts CSV files containing nodes and edges into BloodHound-compatible OpenGraph JSON format.
+`og` (short for OpenGraph) is a command-line tool that builds BloodHound-compatible OpenGraph JSON from structured graph inputs:
+
+- **CSV files** containing nodes and edges
+- **[graphify](https://github.com/Graphify-Labs/graphify) knowledge graphs** (`graph.json`), converted directly with no intermediate CSV
+
+Both input types can be mixed in a single run and share one ID space, so a graphify code graph can be enriched with hand-written CSV nodes and edges in one pass.
 
 Built using the [gopengraph](https://github.com/TheManticoreProject/gopengraph) library for BloodHound OpenGraph compatibility.
 
