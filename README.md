@@ -135,9 +135,9 @@ endpoints, …).
 
 | OpenGraph | Source |
 |-----------|--------|
-| `id` | graphify node id (`id`/`node_id`/`name`/…) |
+| `id` | graphify node id (`id`/`node_id`/`name`/…); colons are replaced with `_` — BloodHound does not support colons in object ids |
 | `kinds` | a single classified kind, inferred from `node_type` and label/file heuristics (e.g. `Class`, `Endpoint`, `Entrypoint`, `Concept`, `Function`) |
-| `properties` | `name`, `displayname`, `objectid` (BloodHound dedup key), `source_file`, `community`, `node_type`, `file_type`, `kind_heuristic`, plus any extra scalar fields (numbers/bools preserved) |
+| `properties` | `name`, `displayname`, `source_file`, `community`, `node_type`, `file_type`, `kind_heuristic`, plus any extra scalar fields (numbers/bools preserved). BloodHound-reserved property names (`objectid`, `ref`) are never emitted |
 
 Emitting a single classified kind is deliberate: gopengraph appends the
 import-wide `source_kind` (`-s`) to every node on export, so each node ends up

@@ -44,6 +44,37 @@ func TestParseGraphifyLinksSchema(t *testing.T) {
 	}
 }
 
+func TestGraphifyColonIDsSanitized(t *testing.T) {
+	// BloodHound does not support colons in OpenGraph object ids, and real
+	// graphify output contains them (e.g. C# "csharp_namespace:<hash>").
+	s := `{"nodes":[{"id":"csharp_namespace:abc123","label":"Ns"},{"id":"plain","label":"P"}],
+	       "links":[{"source":"csharp_namespace:abc123","target":"plain","relation":"contains","confidence":"EXTRACTED"}]}`
+	gd := mustParse(t, s)
+	if gd.Nodes[0].ID != "csharp_namespace_abc123" {
+		t.Errorf("node id = %q, want colon replaced with underscore", gd.Nodes[0].ID)
+	}
+	if gd.Edges[0].Source != "csharp_namespace_abc123" {
+		t.Errorf("edge start = %q, want sanitized consistently with the node id", gd.Edges[0].Source)
+	}
+}
+
+func TestGraphifyReservedPropertyNamesExcluded(t *testing.T) {
+	// "objectid" and "ref" are reserved property names in BloodHound node
+	// definitions; a payload defining them in properties fails ingest.
+	s := `{"nodes":[{"id":"a","label":"A","objectid":"stale","ref":"nope","pagerank":0.5}],"links":[]}`
+	gd := mustParse(t, s)
+	n := gd.Nodes[0]
+	if _, ok := n.Extra["objectid"]; ok {
+		t.Error("objectid must not pass through to properties")
+	}
+	if _, ok := n.Extra["ref"]; ok {
+		t.Error("ref must not pass through to properties")
+	}
+	if _, ok := n.Extra["pagerank"]; !ok {
+		t.Error("non-reserved extra scalars should still pass through")
+	}
+}
+
 func TestParseGraphifyEdgesSchema(t *testing.T) {
 	// raw writer stores edges under "edges" instead of "links"
 	s := `{"nodes":[{"id":"a"},{"id":"b"}],"edges":[{"source":"a","target":"b","relation":"uses","confidence":"EXTRACTED"}]}`
@@ -246,15 +277,11 @@ func TestBuildGraphifyEndToEnd(t *testing.T) {
 	}
 
 	byID := map[string][]string{}
-	objectid := map[string]bool{}
 	for _, n := range payload.Graph.Nodes {
 		byID[n.ID] = n.Kinds
-		if oid, _ := n.Properties["objectid"].(string); oid == n.ID {
-			objectid[n.ID] = true
+		if _, ok := n.Properties["objectid"]; ok {
+			t.Errorf("node %s carries reserved property objectid — BloodHound fails ingest on it", n.ID)
 		}
-	}
-	if !objectid["a"] || !objectid["b"] {
-		t.Error("every node should carry properties.objectid == id")
 	}
 	// class node "b" classifies as Class; gopengraph appends the source_kind
 	// ("Graphify") on export -> exactly [Class, Graphify].

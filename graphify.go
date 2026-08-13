@@ -54,7 +54,10 @@ type graphifyData struct {
 }
 
 // nodeReserved / edgeReserved are keys consumed into typed fields; everything
-// else scalar becomes a passthrough property.
+// else scalar becomes a passthrough property. "objectid" and "ref" are not
+// consumed into fields — they are reserved property names in BloodHound node
+// definitions (a payload defining them fails ingest), so they must never pass
+// through either.
 var nodeReserved = map[string]bool{
 	"id": true, "node_id": true, "key": true, "uid": true, "name": true,
 	"qualified_name": true, "fqname": true, "symbol": true,
@@ -65,6 +68,7 @@ var nodeReserved = map[string]bool{
 	"group": true, "group_id": true, "modularity_class": true,
 	"node_type": true, "kind": true, "type": true, "category": true,
 	"file_type": true, "content_type": true, "artifact_type": true,
+	"objectid": true, "ref": true,
 }
 
 var edgeReserved = map[string]bool{
@@ -124,11 +128,20 @@ func parseGraphifyJSON(data []byte) (*graphifyData, error) {
 	return out, nil
 }
 
+// sanitizeGraphifyID strips colons from ids: BloodHound does not support
+// colons in OpenGraph object ids (affected nodes vanish from search and
+// pathfinding), and real graphify output contains them for some languages,
+// e.g. C# "csharp_namespace:<hash>".
+func sanitizeGraphifyID(id string) string {
+	return strings.ReplaceAll(id, ":", "_")
+}
+
 func normalizeGraphifyNode(m map[string]interface{}, index int) graphifyNode {
 	id := firstString(m, "id", "node_id", "key", "uid", "name", "qualified_name", "fqname", "symbol")
 	if id == "" {
 		id = fmt.Sprintf("node_%d", index+1)
 	}
+	id = sanitizeGraphifyID(id)
 	source := firstString(m, "source_file", "file", "file_path", "filepath", "path", "module_path", "defined_in")
 	label := firstString(m, "label", "display_name", "title", "name", "qualified_name", "fqname", "symbol")
 	if label == "" {
@@ -163,8 +176,8 @@ func normalizeGraphifyNode(m map[string]interface{}, index int) graphifyNode {
 }
 
 func normalizeGraphifyEdge(m map[string]interface{}, index int) (graphifyEdge, bool) {
-	source := endpointID(firstValue(m, "source", "src", "from", "from_id", "start", "u"))
-	target := endpointID(firstValue(m, "target", "dst", "to", "to_id", "end", "v"))
+	source := sanitizeGraphifyID(endpointID(firstValue(m, "source", "src", "from", "from_id", "start", "u")))
+	target := sanitizeGraphifyID(endpointID(firstValue(m, "target", "dst", "to", "to_id", "end", "v")))
 	if source == "" || target == "" {
 		return graphifyEdge{}, false
 	}
@@ -201,7 +214,8 @@ func buildGraphify(graph *gopengraph.OpenGraph, gd *graphifyData, nodeIDs map[st
 		props := properties.NewProperties()
 		props.SetProperty("name", strings.ToUpper(n.Label))
 		props.SetProperty("displayname", humanizeLabel(n.Label, n.SourceFile))
-		props.SetProperty("objectid", n.ID) // BloodHound dedup key
+		// No "objectid" property: BloodHound reserves it (ingest fails on a
+		// conflicting definition) and derives it from the node id.
 		if n.SourceFile != "" {
 			props.SetProperty("source_file", n.SourceFile)
 		}
