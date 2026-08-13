@@ -32,6 +32,7 @@ type CSVFile struct {
 func main() {
 	// Define command-line flags
 	var csvFiles []string
+	var graphifyFiles []string
 	var sourceKind string
 
 	flag.StringVar(&sourceKind, "source_kind", "", "Source kind for the OpenGraph metadata")
@@ -47,14 +48,33 @@ func main() {
 		return nil
 	})
 
+	// graphify graph.json input ("-" reads JSON from stdin)
+	flag.Func("graphify", "graphify graph.json to convert (can be specified multiple times; '-' for stdin)", func(s string) error {
+		graphifyFiles = append(graphifyFiles, s)
+		return nil
+	})
+	flag.Func("g", "graphify graph.json to convert (shorthand)", func(s string) error {
+		graphifyFiles = append(graphifyFiles, s)
+		return nil
+	})
+
 	flag.Parse()
 
 	// Parse CSV data
 	var parsedCSVs []*CSVFile
 
+	// If the user routed stdin to the graphify parser ("-g -"), don't also
+	// consume stdin as CSV.
+	stdinForGraphify := false
+	for _, gf := range graphifyFiles {
+		if gf == "-" {
+			stdinForGraphify = true
+		}
+	}
+
 	// Check if data is being piped via stdin
 	stat, _ := os.Stdin.Stat()
-	if (stat.Mode() & os.ModeCharDevice) == 0 {
+	if !stdinForGraphify && (stat.Mode()&os.ModeCharDevice) == 0 {
 		// Data is being piped
 		csvData, err := parseCSVFromReader(os.Stdin)
 		if err != nil {
@@ -83,8 +103,8 @@ func main() {
 		parsedCSVs = append(parsedCSVs, csvData...)
 	}
 
-	if len(parsedCSVs) == 0 {
-		fmt.Fprintf(os.Stderr, "No CSV data provided. Use --csv/-c flags or pipe data via stdin.\n")
+	if len(parsedCSVs) == 0 && len(graphifyFiles) == 0 {
+		fmt.Fprintf(os.Stderr, "No input provided. Use --csv/-c or --graphify/-g flags, or pipe CSV data via stdin.\n")
 		os.Exit(1)
 	}
 
@@ -111,6 +131,14 @@ func main() {
 	nodeIDs := make(map[string]bool)
 	for _, csv := range nodeCSVs {
 		processNodeCSV(graph, csv, nodeIDs)
+	}
+
+	// Process graphify graph.json inputs (each adds its own nodes then edges)
+	for _, gf := range graphifyFiles {
+		if err := processGraphifyFile(graph, gf, nodeIDs); err != nil {
+			fmt.Fprintf(os.Stderr, "Error processing graphify file %s: %v\n", gf, err)
+			os.Exit(1)
+		}
 	}
 
 	// Process all edge CSVs

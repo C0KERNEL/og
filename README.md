@@ -8,7 +8,8 @@ Built using the [gopengraph](https://github.com/TheManticoreProject/gopengraph) 
 
 - **Multiple input methods**: Read from stdin (pipeline) or specify files via command-line arguments
 - **Automatic CSV detection**: Automatically recognizes node CSVs (with `id` and `kinds` columns) and edge CSVs (with `start`, `end`, and `kind` columns)
-- **Multiple file support**: Process multiple CSV files in a single run
+- **graphify import**: Convert a [graphify](https://github.com/Graphify-Labs/graphify) knowledge-graph `graph.json` straight to OpenGraph (`-g/--graphify`)
+- **Multiple file support**: Process multiple CSV and/or graphify files in a single run
 - **Optional source_kind**: Add a `source_kind` to the metadata when needed
 - **Built with gopengraph**: Leverages the official BloodHound gopengraph library
 
@@ -99,6 +100,67 @@ This produces edges that reference nodes by ID:
 }
 ```
 
+## graphify Input
+
+[graphify](https://github.com/Graphify-Labs/graphify) builds a code/knowledge
+graph and writes a `graph.json`. `og` can convert that file directly to
+OpenGraph — no intermediate CSV needed:
+
+```bash
+og -g graphify-out/graph.json -s Graphify > opengraph.json
+og --graphify graph.json --source_kind Graphify > opengraph.json
+cat graph.json | og -g - -s Graphify > opengraph.json      # '-' reads JSON from stdin
+```
+
+You can mix graphify and CSV inputs in one run (IDs are shared across both):
+
+```bash
+cat extra_nodes.csv | og -g graph.json -c more_edges.csv -s Combined > opengraph.json
+```
+
+Generate a `graph.json` with graphify first (code-only extraction needs no API key):
+
+```bash
+graphify extract ./your-repo --code-only     # local AST, deterministic, no LLM
+```
+
+### Mapping
+
+The converter is schema-tolerant: it accepts both graphify writers (edges under
+`links` *or* `edges`), the `{"graph": {...}}` wrapper, and the common field-name
+variants (`src`/`dst`, `name`-as-id, `cluster`, `weight`, object-valued
+endpoints, …).
+
+**Nodes** → OpenGraph nodes:
+
+| OpenGraph | Source |
+|-----------|--------|
+| `id` | graphify node id (`id`/`node_id`/`name`/…); colons are replaced with `_` — BloodHound does not support colons in object ids |
+| `kinds` | a single classified kind, inferred from `node_type` and label/file heuristics (e.g. `Class`, `Endpoint`, `Entrypoint`, `Concept`, `Function`) |
+| `properties` | `name`, `displayname`, `source_file`, `community`, `node_type`, `file_type`, `kind_heuristic`, plus any extra scalar fields (numbers/bools preserved). BloodHound-reserved property names (`objectid`, `ref`) are never emitted |
+
+Emitting a single classified kind is deliberate: gopengraph appends the
+import-wide `source_kind` (`-s`) to every node on export, so each node ends up
+with at most two kinds — within the cap that
+[`cogs`](https://github.com/C0KERNEL/cogs) enforces. That means graphify output
+merges cleanly:
+
+```bash
+og -g graph.json -s Graphify | cogs -j other-source.json -s Combined > merged.json
+```
+
+**Edges** → OpenGraph edges:
+
+| OpenGraph | Source |
+|-----------|--------|
+| `kind` | PascalCased relation (`calls` → `Calls`, `imports_from` → `ImportsFrom`) |
+| `start` / `end` | node ids, `match_by: "id"` |
+| `properties` | `relation`, `confidence`, `confidence_score`, `include` (graphify's confidence filter: `EXTRACTED`, or `INFERRED` ≥ 0.85), plus extra scalar fields |
+
+No edges are dropped — low-confidence ones are kept with `include: false`. A
+`source_kind` (`-s`) is folded into every node's `kinds` so the whole import can
+be filtered or deleted as a unit in BloodHound.
+
 ## Output Format
 
 The tool generates BloodHound-compatible OpenGraph JSON with the following structure:
@@ -130,6 +192,7 @@ cat testdata/nodes1.csv testdata/nodes2.csv testdata/edges1.csv testdata/edges2.
 ## Command-line Options
 
 - `-c, --csv`: CSV file to process (can be specified multiple times)
+- `-g, --graphify`: graphify `graph.json` to convert (can be specified multiple times; `-` reads JSON from stdin)
 - `-s, --source_kind`: Source kind for the OpenGraph metadata (optional)
 
 ## Examples
