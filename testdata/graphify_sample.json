@@ -1,0 +1,20 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "metadata": { "project_name": "acme-analyzer", "commit": "d3adb33f" },
+  "nodes": [
+    { "id": "cli.main", "label": "main()", "source_file": "app/cli.py", "community": 0, "node_type": "function" },
+    { "id": "cli.run", "label": "run_cli_command()", "source_file": "app/cli.py", "community": 0 },
+    { "id": "build.build_graph", "label": "build_graph()", "source_file": "app/build.py", "community": 1, "pagerank": 0.42 },
+    { "id": "build.GraphSchema", "label": "GraphSchema", "source_file": "app/build.py", "community": 1, "node_type": "class" },
+    { "id": "serve.ApiRouter", "label": "ApiRouter", "source_file": "app/serve.py", "community": 2, "node_type": "endpoint" },
+    { "id": "docs.readme", "label": "README.md", "source_file": "README.md", "community": 3, "file_type": "document" }
+  ],
+  "links": [
+    { "source": "cli.main", "target": "cli.run", "relation": "calls", "confidence": "EXTRACTED" },
+    { "source": "cli.run", "target": "build.build_graph", "relation": "calls", "confidence": "EXTRACTED" },
+    { "source": "build.build_graph", "target": "build.GraphSchema", "relation": "uses", "confidence": "INFERRED", "confidence_score": 0.9 },
+    { "source": "serve.ApiRouter", "target": "build.build_graph", "relation": "imports_from", "confidence": "EXTRACTED" },
+    { "source": "docs.readme", "target": "build.build_graph", "relation": "rationale_for", "confidence": "INFERRED", "confidence_score": 0.3 }
+  ]
+}
