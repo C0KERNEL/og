@@ -1,0 +1,42 @@
+{
+  "go.mod": {
+    "mtime": 1786648506.2874546,
+    "ast_hash": "e65e6dcf90a72dd880ff00c67e2737ed",
+    "semantic_hash": "e65e6dcf90a72dd880ff00c67e2737ed"
+  },
+  "graphify.go": {
+    "mtime": 1786648506.2877555,
+    "ast_hash": "33452e987b5e27bcd9ef883f224b736d",
+    "semantic_hash": "33452e987b5e27bcd9ef883f224b736d"
+  },
+  "graphify_test.go": {
+    "mtime": 1786648506.2883713,
+    "ast_hash": "788cd9c168bf181b3f51defff51fd66b",
+    "semantic_hash": "788cd9c168bf181b3f51defff51fd66b"
+  },
+  "main.go": {
+    "mtime": 1786648506.2887475,
+    "ast_hash": "e2bceca1620a8ab6ae21a50a7c74700e",
+    "semantic_hash": "e2bceca1620a8ab6ae21a50a7c74700e"
+  },
+  "main_test.go": {
+    "mtime": 1786648506.288884,
+    "ast_hash": "c0322b09a2bd176a37cb8f8b9ad2db2c",
+    "semantic_hash": "c0322b09a2bd176a37cb8f8b9ad2db2c"
+  },
+  "testdata/example-output.json": {
+    "mtime": 1786648506.289325,
+    "ast_hash": "1109bcae70a85ad05f39573dab614988",
+    "semantic_hash": "1109bcae70a85ad05f39573dab614988"
+  },
+  "testdata/graphify_sample.json": {
+    "mtime": 1786648506.2894413,
+    "ast_hash": "96e1adb6d029b268425c1be5fdfc5a01",
+    "semantic_hash": "96e1adb6d029b268425c1be5fdfc5a01"
+  },
+  "README.md": {
+    "mtime": 1786648881.9034245,
+    "ast_hash": "f2f7d50ecf138936860313a4a8ac00ae",
+    "semantic_hash": "f2f7d50ecf138936860313a4a8ac00ae"
+  }
+}

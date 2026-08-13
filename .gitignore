@@ -32,3 +32,6 @@ go.work.sum
 # .vscode/
 og
 .DS_Store
+# graphify machine-local state (graph.json, report, html, and og-selfgraph.json are committed on purpose)
+graphify-out/.graphify_*
+graphify-out/cache/

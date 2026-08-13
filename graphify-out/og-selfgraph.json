@@ -1,0 +1,5473 @@
+{
+  "graph": {
+    "edges": [
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_basename"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L555"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_buildgraphify"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L210"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_containsany"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L537"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_edgeincluded"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L364"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_endpointid"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L484"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_firstfloat"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L461"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_firstlist"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L428"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_firststring"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L448"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_firstvalue"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L438"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_formatfloat"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L530"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_graphifykind"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L313"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_graphifynodekinds"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L307"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_hassuffixany"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L546"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_humanizelabel"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L401"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_mget"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L420"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_normalizegraphifyedge"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L178"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_normalizegraphifynode"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L139"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_parsegraphifyjson"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L86"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_pascalcase"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L382"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_passthroughscalars"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L513"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_processgraphifyfile"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L271"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_sanitizegraphifyid"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L135"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_scalarstring"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L494"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "og_graphifydata"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L51"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "og_graphifyedge"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L40"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "og_graphifynode"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify.go",
+          "source_location": "L29"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "og_graphifynode"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify.go",
+          "source_location": "L313"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_graphifykind"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "og_graphifynode"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify.go",
+          "source_location": "L307"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_graphifynodekinds"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "og_graphifynode"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "return_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify.go",
+          "source_location": "L139"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_normalizegraphifynode"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "og_graphifynode"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "field",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify.go",
+          "source_location": "L52"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "og_graphifydata"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "og_graphifyedge"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify.go",
+          "source_location": "L364"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_edgeincluded"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "og_graphifyedge"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "return_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify.go",
+          "source_location": "L178"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_normalizegraphifyedge"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "og_graphifyedge"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "field",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify.go",
+          "source_location": "L53"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "og_graphifydata"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "og_graphifydata"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify.go",
+          "source_location": "L210"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_buildgraphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "og_graphifydata"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "return_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify.go",
+          "source_location": "L86"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_parsegraphifyjson"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "og_graphifydata"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "return_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify_test.go",
+          "source_location": "L22"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_mustparse"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_firstlist"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L97"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_parsegraphifyjson"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_mget"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L97"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_parsegraphifyjson"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_normalizegraphifyedge"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L121"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_parsegraphifyjson"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_normalizegraphifynode"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L108"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_parsegraphifyjson"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_parsegraphifyjson"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L282"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_processgraphifyfile"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_parsegraphifyjson"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "INFERRED",
+          "confidence_score": 0.8,
+          "context": "call",
+          "include": false,
+          "relation": "calls",
+          "source_file": "graphify_test.go",
+          "source_location": "L24"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_mustparse"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_parsegraphifyjson"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "INFERRED",
+          "confidence_score": 0.8,
+          "context": "call",
+          "include": false,
+          "relation": "calls",
+          "source_file": "graphify_test.go",
+          "source_location": "L331"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testbundledsampleparses"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_parsegraphifyjson"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "INFERRED",
+          "confidence_score": 0.8,
+          "context": "call",
+          "include": false,
+          "relation": "calls",
+          "source_file": "graphify_test.go",
+          "source_location": "L320"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testparsegraphifyinvalidjson"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_sanitizegraphifyid"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L179"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_normalizegraphifyedge"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_sanitizegraphifyid"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L144"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_normalizegraphifynode"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_firststring"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L140"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_normalizegraphifynode"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_passthroughscalars"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L174"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_normalizegraphifynode"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_endpointid"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L179"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_normalizegraphifyedge"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_firstfloat"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L192"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_normalizegraphifyedge"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_firststring"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L184"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_normalizegraphifyedge"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_firstvalue"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L179"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_normalizegraphifyedge"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_passthroughscalars"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L201"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_normalizegraphifyedge"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_edgeincluded"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L255"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_buildgraphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_go_opengraph"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify.go",
+          "source_location": "L210"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_buildgraphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_graphifykind"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L227"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_buildgraphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_graphifynodekinds"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L212"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_buildgraphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_humanizelabel"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L216"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_buildgraphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_pascalcase"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L260"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_buildgraphify"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_buildgraphify"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L289"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_processgraphifyfile"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_buildgraphify"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "INFERRED",
+          "confidence_score": 0.8,
+          "context": "call",
+          "include": false,
+          "relation": "calls",
+          "source_file": "graphify_test.go",
+          "source_location": "L235"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testbuildgraphifyendtoend"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_go_opengraph"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify.go",
+          "source_location": "L271"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_processgraphifyfile"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_processgraphifyfile"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "INFERRED",
+          "confidence_score": 0.8,
+          "context": "call",
+          "include": false,
+          "relation": "calls",
+          "source_file": "main.go",
+          "source_location": "L138"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_main"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_graphifykind"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L308"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_graphifynodekinds"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_graphifynodekinds"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "INFERRED",
+          "confidence_score": 0.8,
+          "context": "call",
+          "include": false,
+          "relation": "calls",
+          "source_file": "graphify_test.go",
+          "source_location": "L176"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testgraphifynodekinds"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_containsany"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L337"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_graphifykind"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_hassuffixany"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L349"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_graphifykind"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_graphifykind"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "INFERRED",
+          "confidence_score": 0.8,
+          "context": "call",
+          "include": false,
+          "relation": "calls",
+          "source_file": "graphify_test.go",
+          "source_location": "L167"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testgraphifykind"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_edgeincluded"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "INFERRED",
+          "confidence_score": 0.8,
+          "context": "call",
+          "include": false,
+          "relation": "calls",
+          "source_file": "graphify_test.go",
+          "source_location": "L207"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testedgeincluded"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_pascalcase"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "INFERRED",
+          "confidence_score": 0.8,
+          "context": "call",
+          "include": false,
+          "relation": "calls",
+          "source_file": "graphify_test.go",
+          "source_location": "L190"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testpascalcase"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_basename"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L405"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_humanizelabel"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_hassuffixany"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L412"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_humanizelabel"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_firststring"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L486"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_endpointid"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_scalarstring"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L451"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_firststring"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_scalarstring"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L488"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_endpointid"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_formatfloat"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify.go",
+          "source_location": "L501"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_scalarstring"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_contains"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify_test.go",
+          "source_location": "L310"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_mustparse"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify_test.go",
+          "source_location": "L22"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_testbuildgraphifyendtoend"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify_test.go",
+          "source_location": "L231"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_testbundledsampleparses"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify_test.go",
+          "source_location": "L326"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_testedgeincluded"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify_test.go",
+          "source_location": "L196"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_testgraphifycolonidssanitized"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify_test.go",
+          "source_location": "L47"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_testgraphifykind"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify_test.go",
+          "source_location": "L152"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_testgraphifynodekinds"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify_test.go",
+          "source_location": "L173"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_testgraphifyreservedpropertynamesexcluded"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify_test.go",
+          "source_location": "L61"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_testparsegraphifyalternatefields"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify_test.go",
+          "source_location": "L87"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_testparsegraphifydropsbadrows"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify_test.go",
+          "source_location": "L139"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_testparsegraphifyedgesschema"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify_test.go",
+          "source_location": "L78"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_testparsegraphifygraphwrapper"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify_test.go",
+          "source_location": "L127"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_testparsegraphifyinvalidjson"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify_test.go",
+          "source_location": "L319"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_testparsegraphifylinksschema"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify_test.go",
+          "source_location": "L31"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_testparsegraphifyobjectendpoints"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify_test.go",
+          "source_location": "L117"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_testpascalcase"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify_test.go",
+          "source_location": "L184"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_testpassthroughscalarskeepsextras"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "graphify_test.go",
+          "source_location": "L213"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_go_t"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify_test.go",
+          "source_location": "L22"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_mustparse"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_mustparse"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify_test.go",
+          "source_location": "L232"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testbuildgraphifyendtoend"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_mustparse"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify_test.go",
+          "source_location": "L52"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testgraphifycolonidssanitized"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_mustparse"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify_test.go",
+          "source_location": "L65"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testgraphifyreservedpropertynamesexcluded"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_mustparse"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify_test.go",
+          "source_location": "L98"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testparsegraphifyalternatefields"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_mustparse"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify_test.go",
+          "source_location": "L143"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testparsegraphifydropsbadrows"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_mustparse"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify_test.go",
+          "source_location": "L81"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testparsegraphifyedgesschema"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_mustparse"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify_test.go",
+          "source_location": "L129"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testparsegraphifygraphwrapper"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_mustparse"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify_test.go",
+          "source_location": "L32"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testparsegraphifylinksschema"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_mustparse"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify_test.go",
+          "source_location": "L121"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testparsegraphifyobjectendpoints"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_mustparse"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify_test.go",
+          "source_location": "L214"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testpassthroughscalarskeepsextras"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_go_t"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify_test.go",
+          "source_location": "L231"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testbuildgraphifyendtoend"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_go_t"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify_test.go",
+          "source_location": "L326"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testbundledsampleparses"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_go_t"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify_test.go",
+          "source_location": "L196"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testedgeincluded"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_go_t"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify_test.go",
+          "source_location": "L47"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testgraphifycolonidssanitized"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_go_t"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify_test.go",
+          "source_location": "L152"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testgraphifykind"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_go_t"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify_test.go",
+          "source_location": "L173"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testgraphifynodekinds"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_go_t"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify_test.go",
+          "source_location": "L61"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testgraphifyreservedpropertynamesexcluded"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_go_t"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify_test.go",
+          "source_location": "L87"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testparsegraphifyalternatefields"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_go_t"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify_test.go",
+          "source_location": "L139"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testparsegraphifydropsbadrows"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_go_t"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify_test.go",
+          "source_location": "L78"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testparsegraphifyedgesschema"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_go_t"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify_test.go",
+          "source_location": "L127"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testparsegraphifygraphwrapper"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_go_t"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify_test.go",
+          "source_location": "L319"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testparsegraphifyinvalidjson"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_go_t"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify_test.go",
+          "source_location": "L31"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testparsegraphifylinksschema"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_go_t"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify_test.go",
+          "source_location": "L117"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testparsegraphifyobjectendpoints"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_go_t"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify_test.go",
+          "source_location": "L184"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testpascalcase"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_go_t"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "graphify_test.go",
+          "source_location": "L213"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testpassthroughscalarskeepsextras"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "graphify_test_contains"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "graphify_test.go",
+          "source_location": "L288"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "graphify_test_testbuildgraphifyendtoend"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_detectcsvtype"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "main.go",
+          "source_location": "L319"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_findheaderindex"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "main.go",
+          "source_location": "L498"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_lookslikenewcsvheader"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "main.go",
+          "source_location": "L226"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_main"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "main.go",
+          "source_location": "L32"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_parsecsvfromreader"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "main.go",
+          "source_location": "L162"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_parsecsvlines"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "main.go",
+          "source_location": "L288"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_parsekinds"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "main.go",
+          "source_location": "L485"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_processedgecsv"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "main.go",
+          "source_location": "L413"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_processnodecsv"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "main.go",
+          "source_location": "L348"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "og_csvfile"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "main.go",
+          "source_location": "L26"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "og_csvtype"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "main.go",
+          "source_location": "L18"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "og_csvtype"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "return_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "main.go",
+          "source_location": "L319"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_detectcsvtype"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "og_csvtype"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "field",
+          "include": true,
+          "relation": "references",
+          "source_file": "main.go",
+          "source_location": "L27"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "og_csvfile"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "og_csvfile"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "return_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "main.go",
+          "source_location": "L162"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_parsecsvfromreader"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "og_csvfile"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "return_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "main.go",
+          "source_location": "L288"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_parsecsvlines"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "og_csvfile"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "main.go",
+          "source_location": "L413"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_processedgecsv"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "og_csvfile"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "main.go",
+          "source_location": "L348"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_processnodecsv"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_parsecsvfromreader"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "main.go",
+          "source_location": "L79"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_main"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_processedgecsv"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "main.go",
+          "source_location": "L146"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_main"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_processnodecsv"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "main.go",
+          "source_location": "L133"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_main"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_lookslikenewcsvheader"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "main.go",
+          "source_location": "L181"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_parsecsvfromreader"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_parsecsvlines"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "main.go",
+          "source_location": "L186"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_parsecsvfromreader"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "reader"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "main.go",
+          "source_location": "L162"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_parsecsvfromreader"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_parsecsvfromreader"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "INFERRED",
+          "confidence_score": 0.8,
+          "context": "call",
+          "include": false,
+          "relation": "calls",
+          "source_file": "main_test.go",
+          "source_location": "L324"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_test_testparsecsvfromreader"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_lookslikenewcsvheader"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "INFERRED",
+          "confidence_score": 0.8,
+          "context": "call",
+          "include": false,
+          "relation": "calls",
+          "source_file": "main_test.go",
+          "source_location": "L266"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_test_testlookslikenewcsvheader"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_detectcsvtype"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "main.go",
+          "source_location": "L313"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_parsecsvlines"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_parsecsvlines"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "INFERRED",
+          "confidence_score": 0.8,
+          "context": "call",
+          "include": false,
+          "relation": "calls",
+          "source_file": "main_test.go",
+          "source_location": "L200"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_test_testparsecsvlines"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_detectcsvtype"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "INFERRED",
+          "confidence_score": 0.8,
+          "context": "call",
+          "include": false,
+          "relation": "calls",
+          "source_file": "main_test.go",
+          "source_location": "L48"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_test_testdetectcsvtype"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_findheaderindex"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "main.go",
+          "source_location": "L350"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_processnodecsv"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_go_opengraph"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "main.go",
+          "source_location": "L348"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_processnodecsv"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_parsekinds"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "main.go",
+          "source_location": "L383"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_processnodecsv"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_go_opengraph"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "main.go",
+          "source_location": "L413"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_processedgecsv"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_findheaderindex"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "call",
+          "include": true,
+          "relation": "calls",
+          "source_file": "main.go",
+          "source_location": "L415"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_processedgecsv"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_parsekinds"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "INFERRED",
+          "confidence_score": 0.8,
+          "context": "call",
+          "include": false,
+          "relation": "calls",
+          "source_file": "main_test.go",
+          "source_location": "L140"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_test_testparsekinds"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_findheaderindex"
+        },
+        "kind": "Calls",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "INFERRED",
+          "confidence_score": 0.8,
+          "context": "call",
+          "include": false,
+          "relation": "calls",
+          "source_file": "main_test.go",
+          "source_location": "L97"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_test_testfindheaderindex"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_test_testdetectcsvtype"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "main_test.go",
+          "source_location": "L8"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_test"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_test_testfindheaderindex"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "main_test.go",
+          "source_location": "L56"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_test"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_test_testlookslikenewcsvheader"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "main_test.go",
+          "source_location": "L225"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_test"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_test_testparsecsvfromreader"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "main_test.go",
+          "source_location": "L274"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_test"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_test_testparsecsvlines"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "main_test.go",
+          "source_location": "L154"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_test"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_test_testparsekinds"
+        },
+        "kind": "Contains",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "contains",
+          "source_file": "main_test.go",
+          "source_location": "L105"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_test"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_test_go_t"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "main_test.go",
+          "source_location": "L8"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_test_testdetectcsvtype"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_test_go_t"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "main_test.go",
+          "source_location": "L56"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_test_testfindheaderindex"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_test_go_t"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "main_test.go",
+          "source_location": "L225"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_test_testlookslikenewcsvheader"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_test_go_t"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "main_test.go",
+          "source_location": "L274"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_test_testparsecsvfromreader"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_test_go_t"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "main_test.go",
+          "source_location": "L154"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_test_testparsecsvlines"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "main_test_go_t"
+        },
+        "kind": "References",
+        "properties": {
+          "_origin": "ast",
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "context": "parameter_type",
+          "include": true,
+          "relation": "references",
+          "source_file": "main_test.go",
+          "source_location": "L105"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "main_test_testparsekinds"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "readme_graphify"
+        },
+        "kind": "References",
+        "properties": {
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "references",
+          "source_file": "README.md"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "readme_og"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "readme_bloodhound_opengraph_format"
+        },
+        "kind": "Implements",
+        "properties": {
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "implements",
+          "source_file": "README.md"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "readme_og"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "readme_cogs"
+        },
+        "kind": "SharesDataWith",
+        "properties": {
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "shares_data_with",
+          "source_file": "README.md"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "readme_og"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "readme_csv_edge_format"
+        },
+        "kind": "References",
+        "properties": {
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "references",
+          "source_file": "README.md"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "readme_og"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "readme_csv_node_format"
+        },
+        "kind": "References",
+        "properties": {
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "references",
+          "source_file": "README.md"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "readme_og"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "readme_gopengraph"
+        },
+        "kind": "References",
+        "properties": {
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "references",
+          "source_file": "README.md"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "readme_og"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "readme_graphify_converter"
+        },
+        "kind": "Implements",
+        "properties": {
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "implements",
+          "source_file": "README.md"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "readme_og"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "readme_shared_id_space"
+        },
+        "kind": "Implements",
+        "properties": {
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "implements",
+          "source_file": "README.md"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "readme_og"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "readme_gopengraph"
+        },
+        "kind": "References",
+        "properties": {
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "references",
+          "source_file": "README.md"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "readme_source_kind"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "readme_graphify"
+        },
+        "kind": "References",
+        "properties": {
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "references",
+          "source_file": "README.md"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "readme_confidence_include_filter"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "readme_graphify"
+        },
+        "kind": "References",
+        "properties": {
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "references",
+          "source_file": "README.md"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "readme_graphify_converter"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "readme_cogs"
+        },
+        "kind": "References",
+        "properties": {
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "references",
+          "source_file": "README.md"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "readme_single_kind_classification"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "readme_bloodhound_opengraph_format"
+        },
+        "kind": "References",
+        "properties": {
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "references",
+          "source_file": "README.md"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "readme_colon_id_sanitization"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "readme_bloodhound_opengraph_format"
+        },
+        "kind": "Implements",
+        "properties": {
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "implements",
+          "source_file": "README.md"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "readme_graphify_converter"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "readme_match_by_id"
+        },
+        "kind": "References",
+        "properties": {
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "references",
+          "source_file": "README.md"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "readme_csv_edge_format"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "readme_colon_id_sanitization"
+        },
+        "kind": "Implements",
+        "properties": {
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "implements",
+          "source_file": "README.md"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "readme_graphify_converter"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "readme_confidence_include_filter"
+        },
+        "kind": "Implements",
+        "properties": {
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "implements",
+          "source_file": "README.md"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "readme_graphify_converter"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "readme_match_by_id"
+        },
+        "kind": "References",
+        "properties": {
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "references",
+          "source_file": "README.md"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "readme_graphify_converter"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "readme_graphify_converter"
+        },
+        "kind": "RationaleFor",
+        "properties": {
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "rationale_for",
+          "source_file": "README.md"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "readme_single_kind_classification"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "readme_source_kind"
+        },
+        "kind": "ConceptuallyRelatedTo",
+        "properties": {
+          "confidence": "EXTRACTED",
+          "confidence_score": 1,
+          "include": true,
+          "relation": "conceptually_related_to",
+          "source_file": "README.md"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "readme_single_kind_classification"
+        }
+      },
+      {
+        "end": {
+          "match_by": "id",
+          "value": "readme_match_by_id"
+        },
+        "kind": "ConceptuallyRelatedTo",
+        "properties": {
+          "confidence": "INFERRED",
+          "confidence_score": 0.85,
+          "include": true,
+          "relation": "conceptually_related_to",
+          "source_file": "README.md"
+        },
+        "start": {
+          "match_by": "id",
+          "value": "readme_shared_id_space"
+        }
+      }
+    ],
+    "nodes": [
+      {
+        "id": "main_parsekinds",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "6",
+          "community_name": "CSV Processing Pipeline",
+          "displayname": "parseKinds()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "PARSEKINDS()",
+          "norm_label": "parsekinds()",
+          "source_file": "main.go",
+          "source_location": "L485"
+        }
+      },
+      {
+        "id": "og_graphifyedge",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "5",
+          "community_name": "graphify-to-OpenGraph Build",
+          "displayname": "graphifyEdge",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "GRAPHIFYEDGE",
+          "norm_label": "graphifyedge",
+          "source_file": "graphify.go",
+          "source_location": "L40"
+        }
+      },
+      {
+        "id": "graphify_firstfloat",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "2",
+          "community_name": "graphify Field Normalization",
+          "displayname": "firstFloat()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "FIRSTFLOAT()",
+          "norm_label": "firstfloat()",
+          "source_file": "graphify.go",
+          "source_location": "L461"
+        }
+      },
+      {
+        "id": "graphify_test_testparsegraphifydropsbadrows",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "0",
+          "community_name": "graphify Converter Tests",
+          "displayname": "TestParseGraphifyDropsBadRows()",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "TESTPARSEGRAPHIFYDROPSBADROWS()",
+          "norm_label": "testparsegraphifydropsbadrows()",
+          "source_file": "graphify_test.go",
+          "source_location": "L139"
+        }
+      },
+      {
+        "id": "graphify_test_testgraphifynodekinds",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "0",
+          "community_name": "graphify Converter Tests",
+          "displayname": "TestGraphifyNodeKinds()",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "TESTGRAPHIFYNODEKINDS()",
+          "norm_label": "testgraphifynodekinds()",
+          "source_file": "graphify_test.go",
+          "source_location": "L173"
+        }
+      },
+      {
+        "id": "graphify_firstvalue",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "2",
+          "community_name": "graphify Field Normalization",
+          "displayname": "firstValue()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "FIRSTVALUE()",
+          "norm_label": "firstvalue()",
+          "source_file": "graphify.go",
+          "source_location": "L438"
+        }
+      },
+      {
+        "id": "graphify_test_testgraphifyreservedpropertynamesexcluded",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "0",
+          "community_name": "graphify Converter Tests",
+          "displayname": "TestGraphifyReservedPropertyNamesExcluded()",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "TESTGRAPHIFYRESERVEDPROPERTYNAMESEXCLUDED()",
+          "norm_label": "testgraphifyreservedpropertynamesexcluded()",
+          "source_file": "graphify_test.go",
+          "source_location": "L61"
+        }
+      },
+      {
+        "id": "graphify_test_testpassthroughscalarskeepsextras",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "0",
+          "community_name": "graphify Converter Tests",
+          "displayname": "TestPassthroughScalarsKeepsExtras()",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "TESTPASSTHROUGHSCALARSKEEPSEXTRAS()",
+          "norm_label": "testpassthroughscalarskeepsextras()",
+          "source_file": "graphify_test.go",
+          "source_location": "L213"
+        }
+      },
+      {
+        "id": "main_main",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "6",
+          "community_name": "CSV Processing Pipeline",
+          "displayname": "main()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "MAIN()",
+          "norm_label": "main()",
+          "source_file": "main.go",
+          "source_location": "L32"
+        }
+      },
+      {
+        "id": "readme_source_kind",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "community": "1",
+          "community_name": "README Concepts \u0026 Ecosystem",
+          "displayname": "source_kind Import Tag",
+          "file_type": "concept",
+          "kind_heuristic": "function",
+          "name": "SOURCE_KIND IMPORT TAG",
+          "norm_label": "source_kind import tag",
+          "rationale": "Folded into every node's kinds and recorded in metadata so the whole import can be filtered or deleted as a unit in BloodHound.",
+          "source_file": "README.md"
+        }
+      },
+      {
+        "id": "og_graphifydata",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "5",
+          "community_name": "graphify-to-OpenGraph Build",
+          "displayname": "graphifyData",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "GRAPHIFYDATA",
+          "norm_label": "graphifydata",
+          "source_file": "graphify.go",
+          "source_location": "L51"
+        }
+      },
+      {
+        "id": "graphify_test",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "0",
+          "community_name": "graphify Converter Tests",
+          "displayname": "graphify_test.go",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "GRAPHIFY_TEST.GO",
+          "norm_label": "graphify_test.go",
+          "source_file": "graphify_test.go",
+          "source_location": "L1"
+        }
+      },
+      {
+        "id": "graphify_test_testparsegraphifylinksschema",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "0",
+          "community_name": "graphify Converter Tests",
+          "displayname": "TestParseGraphifyLinksSchema()",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "TESTPARSEGRAPHIFYLINKSSCHEMA()",
+          "norm_label": "testparsegraphifylinksschema()",
+          "source_file": "graphify_test.go",
+          "source_location": "L31"
+        }
+      },
+      {
+        "id": "main",
+        "kinds": [
+          "Module",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "6",
+          "community_name": "CSV Processing Pipeline",
+          "displayname": "main.go",
+          "file_type": "code",
+          "kind_heuristic": "module",
+          "name": "MAIN.GO",
+          "norm_label": "main.go",
+          "source_file": "main.go",
+          "source_location": "L1"
+        }
+      },
+      {
+        "id": "main_test_testparsecsvfromreader",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "4",
+          "community_name": "CSV Parser Tests",
+          "displayname": "TestParseCSVFromReader()",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "TESTPARSECSVFROMREADER()",
+          "norm_label": "testparsecsvfromreader()",
+          "source_file": "main_test.go",
+          "source_location": "L274"
+        }
+      },
+      {
+        "id": "readme_single_kind_classification",
+        "kinds": [
+          "Concept",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "community": "1",
+          "community_name": "README Concepts \u0026 Ecosystem",
+          "displayname": "Single Classified Kind per Node",
+          "file_type": "rationale",
+          "kind_heuristic": "concept",
+          "name": "SINGLE CLASSIFIED KIND PER NODE",
+          "norm_label": "single classified kind per node",
+          "rationale": "Emitting exactly one classified kind is deliberate: gopengraph appends the import-wide source_kind to every node on export, so each node ends up with at most two kinds — within the cap that cogs enforces — letting graphify output merge cleanly with other sources.",
+          "source_file": "README.md"
+        }
+      },
+      {
+        "id": "readme_match_by_id",
+        "kinds": [
+          "Endpoint",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "community": "1",
+          "community_name": "README Concepts \u0026 Ecosystem",
+          "displayname": "match_by id Edge Endpoint Resolution",
+          "file_type": "concept",
+          "kind_heuristic": "api",
+          "name": "MATCH_BY ID EDGE ENDPOINT RESOLUTION",
+          "norm_label": "match_by id edge endpoint resolution",
+          "rationale": "All edges use match_by: \"id\" so endpoints reference nodes by their ID field rather than by name lookup.",
+          "source_file": "README.md"
+        }
+      },
+      {
+        "id": "graphify_go_opengraph",
+        "kinds": [
+          "Class",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "5",
+          "community_name": "graphify-to-OpenGraph Build",
+          "displayname": "OpenGraph",
+          "file_type": "code",
+          "kind_heuristic": "klass",
+          "name": "OPENGRAPH",
+          "norm_label": "opengraph",
+          "source_location": ""
+        }
+      },
+      {
+        "id": "graphify_firstlist",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "8",
+          "community_name": "graphify JSON Parsing",
+          "displayname": "firstList()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "FIRSTLIST()",
+          "norm_label": "firstlist()",
+          "source_file": "graphify.go",
+          "source_location": "L428"
+        }
+      },
+      {
+        "id": "graphify_test_contains",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "0",
+          "community_name": "graphify Converter Tests",
+          "displayname": "contains()",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "CONTAINS()",
+          "norm_label": "contains()",
+          "source_file": "graphify_test.go",
+          "source_location": "L310"
+        }
+      },
+      {
+        "id": "main_test",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "4",
+          "community_name": "CSV Parser Tests",
+          "displayname": "main_test.go",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "MAIN_TEST.GO",
+          "norm_label": "main_test.go",
+          "source_file": "main_test.go",
+          "source_location": "L1"
+        }
+      },
+      {
+        "id": "readme_cogs",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "community": "1",
+          "community_name": "README Concepts \u0026 Ecosystem",
+          "displayname": "cogs OpenGraph Merger",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "COGS OPENGRAPH MERGER",
+          "norm_label": "cogs opengraph merger",
+          "source_file": "README.md",
+          "source_url": "https://github.com/C0KERNEL/cogs"
+        }
+      },
+      {
+        "id": "readme_graphify_converter",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "community": "1",
+          "community_name": "README Concepts \u0026 Ecosystem",
+          "displayname": "graphify-to-OpenGraph Converter",
+          "file_type": "concept",
+          "kind_heuristic": "function",
+          "name": "GRAPHIFY-TO-OPENGRAPH CONVERTER",
+          "norm_label": "graphify-to-opengraph converter",
+          "rationale": "Deliberately schema-tolerant: accepts edges under links or edges, the {\"graph\": {...}} wrapper, and field-name variants (src/dst, name-as-id, cluster, weight, object-valued endpoints) so graph.json converts directly with no intermediate CSV.",
+          "source_file": "README.md"
+        }
+      },
+      {
+        "id": "pkg_github_com_c0kernel_og",
+        "kinds": [
+          "Module",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "10",
+          "community_name": "Go Module",
+          "displayname": "github.com/C0KERNEL/og",
+          "ecosystem": "go",
+          "file_type": "code",
+          "kind_heuristic": "module",
+          "name": "GITHUB.COM/C0KERNEL/OG",
+          "node_type": "package",
+          "norm_label": "github.com/c0kernel/og",
+          "source_file": "go.mod",
+          "source_location": "L1"
+        }
+      },
+      {
+        "id": "graphify_normalizegraphifyedge",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "2",
+          "community_name": "graphify Field Normalization",
+          "displayname": "normalizeGraphifyEdge()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "NORMALIZEGRAPHIFYEDGE()",
+          "norm_label": "normalizegraphifyedge()",
+          "source_file": "graphify.go",
+          "source_location": "L178"
+        }
+      },
+      {
+        "id": "graphify_basename",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "3",
+          "community_name": "Kind Classification Heuristics",
+          "displayname": "baseName()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "BASENAME()",
+          "norm_label": "basename()",
+          "source_file": "graphify.go",
+          "source_location": "L555"
+        }
+      },
+      {
+        "id": "graphify_test_testparsegraphifyobjectendpoints",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "0",
+          "community_name": "graphify Converter Tests",
+          "displayname": "TestParseGraphifyObjectEndpoints()",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "TESTPARSEGRAPHIFYOBJECTENDPOINTS()",
+          "norm_label": "testparsegraphifyobjectendpoints()",
+          "source_file": "graphify_test.go",
+          "source_location": "L117"
+        }
+      },
+      {
+        "id": "graphify_test_testparsegraphifygraphwrapper",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "0",
+          "community_name": "graphify Converter Tests",
+          "displayname": "TestParseGraphifyGraphWrapper()",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "TESTPARSEGRAPHIFYGRAPHWRAPPER()",
+          "norm_label": "testparsegraphifygraphwrapper()",
+          "source_file": "graphify_test.go",
+          "source_location": "L127"
+        }
+      },
+      {
+        "id": "graphify_test_testparsegraphifyinvalidjson",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "0",
+          "community_name": "graphify Converter Tests",
+          "displayname": "TestParseGraphifyInvalidJSON()",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "TESTPARSEGRAPHIFYINVALIDJSON()",
+          "norm_label": "testparsegraphifyinvalidjson()",
+          "source_file": "graphify_test.go",
+          "source_location": "L319"
+        }
+      },
+      {
+        "id": "main_detectcsvtype",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "7",
+          "community_name": "CSV Type Detection",
+          "displayname": "detectCSVType()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "DETECTCSVTYPE()",
+          "norm_label": "detectcsvtype()",
+          "source_file": "main.go",
+          "source_location": "L319"
+        }
+      },
+      {
+        "id": "main_test_testparsecsvlines",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "4",
+          "community_name": "CSV Parser Tests",
+          "displayname": "TestParseCSVLines()",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "TESTPARSECSVLINES()",
+          "norm_label": "testparsecsvlines()",
+          "source_file": "main_test.go",
+          "source_location": "L154"
+        }
+      },
+      {
+        "id": "graphify_sanitizegraphifyid",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "2",
+          "community_name": "graphify Field Normalization",
+          "displayname": "sanitizeGraphifyID()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "SANITIZEGRAPHIFYID()",
+          "norm_label": "sanitizegraphifyid()",
+          "source_file": "graphify.go",
+          "source_location": "L135"
+        }
+      },
+      {
+        "id": "graphify_humanizelabel",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "3",
+          "community_name": "Kind Classification Heuristics",
+          "displayname": "humanizeLabel()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "HUMANIZELABEL()",
+          "norm_label": "humanizelabel()",
+          "source_file": "graphify.go",
+          "source_location": "L401"
+        }
+      },
+      {
+        "id": "graphify_test_testparsegraphifyedgesschema",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "0",
+          "community_name": "graphify Converter Tests",
+          "displayname": "TestParseGraphifyEdgesSchema()",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "TESTPARSEGRAPHIFYEDGESSCHEMA()",
+          "norm_label": "testparsegraphifyedgesschema()",
+          "source_file": "graphify_test.go",
+          "source_location": "L78"
+        }
+      },
+      {
+        "id": "main_go_opengraph",
+        "kinds": [
+          "Class",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "6",
+          "community_name": "CSV Processing Pipeline",
+          "displayname": "OpenGraph",
+          "file_type": "code",
+          "kind_heuristic": "klass",
+          "name": "OPENGRAPH",
+          "norm_label": "opengraph",
+          "source_location": ""
+        }
+      },
+      {
+        "id": "readme_bloodhound_opengraph_format",
+        "kinds": [
+          "Class",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "community": "1",
+          "community_name": "README Concepts \u0026 Ecosystem",
+          "displayname": "BloodHound OpenGraph JSON Format",
+          "file_type": "concept",
+          "kind_heuristic": "klass",
+          "name": "BLOODHOUND OPENGRAPH JSON FORMAT",
+          "norm_label": "bloodhound opengraph json format",
+          "source_file": "README.md"
+        }
+      },
+      {
+        "id": "readme_colon_id_sanitization",
+        "kinds": [
+          "Class",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "community": "1",
+          "community_name": "README Concepts \u0026 Ecosystem",
+          "displayname": "Colon-to-Underscore ID Sanitization",
+          "file_type": "concept",
+          "kind_heuristic": "klass",
+          "name": "COLON-TO-UNDERSCORE ID SANITIZATION",
+          "norm_label": "colon-to-underscore id sanitization",
+          "rationale": "Colons in graphify node ids are replaced with underscores because BloodHound does not support colons in object ids; BloodHound-reserved property names (objectid, ref) are never emitted.",
+          "source_file": "README.md"
+        }
+      },
+      {
+        "id": "graphify",
+        "kinds": [
+          "Module",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "3",
+          "community_name": "Kind Classification Heuristics",
+          "displayname": "graphify.go",
+          "file_type": "code",
+          "kind_heuristic": "module",
+          "name": "GRAPHIFY.GO",
+          "norm_label": "graphify.go",
+          "source_file": "graphify.go",
+          "source_location": "L1"
+        }
+      },
+      {
+        "id": "graphify_normalizegraphifynode",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "2",
+          "community_name": "graphify Field Normalization",
+          "displayname": "normalizeGraphifyNode()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "NORMALIZEGRAPHIFYNODE()",
+          "norm_label": "normalizegraphifynode()",
+          "source_file": "graphify.go",
+          "source_location": "L139"
+        }
+      },
+      {
+        "id": "graphify_scalarstring",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "2",
+          "community_name": "graphify Field Normalization",
+          "displayname": "scalarString()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "SCALARSTRING()",
+          "norm_label": "scalarstring()",
+          "source_file": "graphify.go",
+          "source_location": "L494"
+        }
+      },
+      {
+        "id": "main_lookslikenewcsvheader",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "9",
+          "community_name": "CSV Stream Reader",
+          "displayname": "looksLikeNewCSVHeader()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "LOOKSLIKENEWCSVHEADER()",
+          "norm_label": "lookslikenewcsvheader()",
+          "source_file": "main.go",
+          "source_location": "L226"
+        }
+      },
+      {
+        "id": "main_findheaderindex",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "6",
+          "community_name": "CSV Processing Pipeline",
+          "displayname": "findHeaderIndex()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "FINDHEADERINDEX()",
+          "norm_label": "findheaderindex()",
+          "source_file": "main.go",
+          "source_location": "L498"
+        }
+      },
+      {
+        "id": "main_test_go_t",
+        "kinds": [
+          "Class",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "4",
+          "community_name": "CSV Parser Tests",
+          "displayname": "T",
+          "file_type": "code",
+          "kind_heuristic": "klass",
+          "name": "T",
+          "norm_label": "t",
+          "source_location": ""
+        }
+      },
+      {
+        "id": "og_graphifynode",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "3",
+          "community_name": "Kind Classification Heuristics",
+          "displayname": "graphifyNode",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "GRAPHIFYNODE",
+          "norm_label": "graphifynode",
+          "source_file": "graphify.go",
+          "source_location": "L29"
+        }
+      },
+      {
+        "id": "graphify_parsegraphifyjson",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "8",
+          "community_name": "graphify JSON Parsing",
+          "displayname": "parseGraphifyJSON()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "PARSEGRAPHIFYJSON()",
+          "norm_label": "parsegraphifyjson()",
+          "source_file": "graphify.go",
+          "source_location": "L86"
+        }
+      },
+      {
+        "id": "graphify_test_testparsegraphifyalternatefields",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "0",
+          "community_name": "graphify Converter Tests",
+          "displayname": "TestParseGraphifyAlternateFields()",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "TESTPARSEGRAPHIFYALTERNATEFIELDS()",
+          "norm_label": "testparsegraphifyalternatefields()",
+          "source_file": "graphify_test.go",
+          "source_location": "L87"
+        }
+      },
+      {
+        "id": "graphify_test_testbundledsampleparses",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "0",
+          "community_name": "graphify Converter Tests",
+          "displayname": "TestBundledSampleParses()",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "TESTBUNDLEDSAMPLEPARSES()",
+          "norm_label": "testbundledsampleparses()",
+          "source_file": "graphify_test.go",
+          "source_location": "L326"
+        }
+      },
+      {
+        "id": "main_test_testlookslikenewcsvheader",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "4",
+          "community_name": "CSV Parser Tests",
+          "displayname": "TestLooksLikeNewCSVHeader()",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "TESTLOOKSLIKENEWCSVHEADER()",
+          "norm_label": "testlookslikenewcsvheader()",
+          "source_file": "main_test.go",
+          "source_location": "L225"
+        }
+      },
+      {
+        "id": "graphify_test_testgraphifycolonidssanitized",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "0",
+          "community_name": "graphify Converter Tests",
+          "displayname": "TestGraphifyColonIDsSanitized()",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "TESTGRAPHIFYCOLONIDSSANITIZED()",
+          "norm_label": "testgraphifycolonidssanitized()",
+          "source_file": "graphify_test.go",
+          "source_location": "L47"
+        }
+      },
+      {
+        "id": "main_test_testdetectcsvtype",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "4",
+          "community_name": "CSV Parser Tests",
+          "displayname": "TestDetectCSVType()",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "TESTDETECTCSVTYPE()",
+          "norm_label": "testdetectcsvtype()",
+          "source_file": "main_test.go",
+          "source_location": "L8"
+        }
+      },
+      {
+        "id": "main_test_testparsekinds",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "4",
+          "community_name": "CSV Parser Tests",
+          "displayname": "TestParseKinds()",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "TESTPARSEKINDS()",
+          "norm_label": "testparsekinds()",
+          "source_file": "main_test.go",
+          "source_location": "L105"
+        }
+      },
+      {
+        "id": "graphify_processgraphifyfile",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "5",
+          "community_name": "graphify-to-OpenGraph Build",
+          "displayname": "processGraphifyFile()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "PROCESSGRAPHIFYFILE()",
+          "norm_label": "processgraphifyfile()",
+          "source_file": "graphify.go",
+          "source_location": "L271"
+        }
+      },
+      {
+        "id": "graphify_graphifykind",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "3",
+          "community_name": "Kind Classification Heuristics",
+          "displayname": "graphifyKind()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "GRAPHIFYKIND()",
+          "norm_label": "graphifykind()",
+          "source_file": "graphify.go",
+          "source_location": "L313"
+        }
+      },
+      {
+        "id": "graphify_edgeincluded",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "5",
+          "community_name": "graphify-to-OpenGraph Build",
+          "displayname": "edgeIncluded()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "EDGEINCLUDED()",
+          "norm_label": "edgeincluded()",
+          "source_file": "graphify.go",
+          "source_location": "L364"
+        }
+      },
+      {
+        "id": "graphify_formatfloat",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "2",
+          "community_name": "graphify Field Normalization",
+          "displayname": "formatFloat()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "FORMATFLOAT()",
+          "norm_label": "formatfloat()",
+          "source_file": "graphify.go",
+          "source_location": "L530"
+        }
+      },
+      {
+        "id": "og_csvfile",
+        "kinds": [
+          "Class",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "7",
+          "community_name": "CSV Type Detection",
+          "displayname": "CSVFile",
+          "file_type": "code",
+          "kind_heuristic": "klass",
+          "name": "CSVFILE",
+          "norm_label": "csvfile",
+          "source_file": "main.go",
+          "source_location": "L26"
+        }
+      },
+      {
+        "id": "reader",
+        "kinds": [
+          "Class",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "9",
+          "community_name": "CSV Stream Reader",
+          "displayname": "Reader",
+          "file_type": "code",
+          "kind_heuristic": "klass",
+          "name": "READER",
+          "norm_label": "reader",
+          "source_location": ""
+        }
+      },
+      {
+        "id": "main_parsecsvlines",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "7",
+          "community_name": "CSV Type Detection",
+          "displayname": "parseCSVLines()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "PARSECSVLINES()",
+          "norm_label": "parsecsvlines()",
+          "source_file": "main.go",
+          "source_location": "L288"
+        }
+      },
+      {
+        "id": "graphify_test_testgraphifykind",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "0",
+          "community_name": "graphify Converter Tests",
+          "displayname": "TestGraphifyKind()",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "TESTGRAPHIFYKIND()",
+          "norm_label": "testgraphifykind()",
+          "source_file": "graphify_test.go",
+          "source_location": "L152"
+        }
+      },
+      {
+        "id": "readme_confidence_include_filter",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "community": "1",
+          "community_name": "README Concepts \u0026 Ecosystem",
+          "displayname": "include Confidence Filter",
+          "file_type": "concept",
+          "kind_heuristic": "function",
+          "name": "INCLUDE CONFIDENCE FILTER",
+          "norm_label": "include confidence filter",
+          "rationale": "No edges are dropped during conversion: low-confidence edges are kept with include: false (the filter passes EXTRACTED, or INFERRED with confidence_score \u003e= 0.85), preserving the full graph while letting consumers filter.",
+          "source_file": "README.md"
+        }
+      },
+      {
+        "id": "readme_shared_id_space",
+        "kinds": [
+          "Class",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "community": "1",
+          "community_name": "README Concepts \u0026 Ecosystem",
+          "displayname": "Shared ID Space Across Inputs",
+          "file_type": "concept",
+          "kind_heuristic": "klass",
+          "name": "SHARED ID SPACE ACROSS INPUTS",
+          "norm_label": "shared id space across inputs",
+          "rationale": "CSV and graphify inputs share one ID space in a single run, so a graphify code graph can be enriched with hand-written CSV nodes and edges in one pass.",
+          "source_file": "README.md"
+        }
+      },
+      {
+        "id": "graphify_firststring",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "2",
+          "community_name": "graphify Field Normalization",
+          "displayname": "firstString()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "FIRSTSTRING()",
+          "norm_label": "firststring()",
+          "source_file": "graphify.go",
+          "source_location": "L448"
+        }
+      },
+      {
+        "id": "graphify_endpointid",
+        "kinds": [
+          "Endpoint",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "2",
+          "community_name": "graphify Field Normalization",
+          "displayname": "endpointID()",
+          "file_type": "code",
+          "kind_heuristic": "api",
+          "name": "ENDPOINTID()",
+          "norm_label": "endpointid()",
+          "source_file": "graphify.go",
+          "source_location": "L484"
+        }
+      },
+      {
+        "id": "graphify_passthroughscalars",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "2",
+          "community_name": "graphify Field Normalization",
+          "displayname": "passthroughScalars()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "PASSTHROUGHSCALARS()",
+          "norm_label": "passthroughscalars()",
+          "source_file": "graphify.go",
+          "source_location": "L513"
+        }
+      },
+      {
+        "id": "graphify_containsany",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "3",
+          "community_name": "Kind Classification Heuristics",
+          "displayname": "containsAny()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "CONTAINSANY()",
+          "norm_label": "containsany()",
+          "source_file": "graphify.go",
+          "source_location": "L537"
+        }
+      },
+      {
+        "id": "graphify_test_testedgeincluded",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "0",
+          "community_name": "graphify Converter Tests",
+          "displayname": "TestEdgeIncluded()",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "TESTEDGEINCLUDED()",
+          "norm_label": "testedgeincluded()",
+          "source_file": "graphify_test.go",
+          "source_location": "L196"
+        }
+      },
+      {
+        "id": "main_test_testfindheaderindex",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "4",
+          "community_name": "CSV Parser Tests",
+          "displayname": "TestFindHeaderIndex()",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "TESTFINDHEADERINDEX()",
+          "norm_label": "testfindheaderindex()",
+          "source_file": "main_test.go",
+          "source_location": "L56"
+        }
+      },
+      {
+        "id": "readme_csv_edge_format",
+        "kinds": [
+          "Class",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "community": "1",
+          "community_name": "README Concepts \u0026 Ecosystem",
+          "displayname": "Edge CSV Format",
+          "file_type": "concept",
+          "kind_heuristic": "klass",
+          "name": "EDGE CSV FORMAT",
+          "norm_label": "edge csv format",
+          "rationale": "Requires start, end, and kind columns; auto-detected by headers. Additional columns become edge properties.",
+          "source_file": "README.md"
+        }
+      },
+      {
+        "id": "graphify_graphifynodekinds",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "3",
+          "community_name": "Kind Classification Heuristics",
+          "displayname": "graphifyNodeKinds()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "GRAPHIFYNODEKINDS()",
+          "norm_label": "graphifynodekinds()",
+          "source_file": "graphify.go",
+          "source_location": "L307"
+        }
+      },
+      {
+        "id": "graphify_test_mustparse",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "0",
+          "community_name": "graphify Converter Tests",
+          "displayname": "mustParse()",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "MUSTPARSE()",
+          "norm_label": "mustparse()",
+          "source_file": "graphify_test.go",
+          "source_location": "L22"
+        }
+      },
+      {
+        "id": "graphify_test_go_t",
+        "kinds": [
+          "Class",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "0",
+          "community_name": "graphify Converter Tests",
+          "displayname": "T",
+          "file_type": "code",
+          "kind_heuristic": "klass",
+          "name": "T",
+          "norm_label": "t",
+          "source_location": ""
+        }
+      },
+      {
+        "id": "graphify_test_testpascalcase",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "0",
+          "community_name": "graphify Converter Tests",
+          "displayname": "TestPascalCase()",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "TESTPASCALCASE()",
+          "norm_label": "testpascalcase()",
+          "source_file": "graphify_test.go",
+          "source_location": "L184"
+        }
+      },
+      {
+        "id": "main_processnodecsv",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "6",
+          "community_name": "CSV Processing Pipeline",
+          "displayname": "processNodeCSV()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "PROCESSNODECSV()",
+          "norm_label": "processnodecsv()",
+          "source_file": "main.go",
+          "source_location": "L348"
+        }
+      },
+      {
+        "id": "graphify_pascalcase",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "5",
+          "community_name": "graphify-to-OpenGraph Build",
+          "displayname": "pascalCase()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "PASCALCASE()",
+          "norm_label": "pascalcase()",
+          "source_file": "graphify.go",
+          "source_location": "L382"
+        }
+      },
+      {
+        "id": "graphify_mget",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "8",
+          "community_name": "graphify JSON Parsing",
+          "displayname": "mget()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "MGET()",
+          "norm_label": "mget()",
+          "source_file": "graphify.go",
+          "source_location": "L420"
+        }
+      },
+      {
+        "id": "graphify_test_testbuildgraphifyendtoend",
+        "kinds": [
+          "Test",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "0",
+          "community_name": "graphify Converter Tests",
+          "displayname": "TestBuildGraphifyEndToEnd()",
+          "file_type": "code",
+          "kind_heuristic": "test",
+          "name": "TESTBUILDGRAPHIFYENDTOEND()",
+          "norm_label": "testbuildgraphifyendtoend()",
+          "source_file": "graphify_test.go",
+          "source_location": "L231"
+        }
+      },
+      {
+        "id": "og_csvtype",
+        "kinds": [
+          "Class",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "7",
+          "community_name": "CSV Type Detection",
+          "displayname": "CSVType",
+          "file_type": "code",
+          "kind_heuristic": "klass",
+          "name": "CSVTYPE",
+          "norm_label": "csvtype",
+          "source_file": "main.go",
+          "source_location": "L18"
+        }
+      },
+      {
+        "id": "main_parsecsvfromreader",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "9",
+          "community_name": "CSV Stream Reader",
+          "displayname": "parseCSVFromReader()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "PARSECSVFROMREADER()",
+          "norm_label": "parsecsvfromreader()",
+          "source_file": "main.go",
+          "source_location": "L162"
+        }
+      },
+      {
+        "id": "readme_csv_node_format",
+        "kinds": [
+          "Class",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "community": "1",
+          "community_name": "README Concepts \u0026 Ecosystem",
+          "displayname": "Node CSV Format",
+          "file_type": "concept",
+          "kind_heuristic": "klass",
+          "name": "NODE CSV FORMAT",
+          "norm_label": "node csv format",
+          "rationale": "Requires only id and kinds columns; auto-detected by column headers so node and edge CSVs can be mixed on stdin without flags. Additional columns become node properties.",
+          "source_file": "README.md"
+        }
+      },
+      {
+        "id": "graphify_buildgraphify",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "5",
+          "community_name": "graphify-to-OpenGraph Build",
+          "displayname": "buildGraphify()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "BUILDGRAPHIFY()",
+          "norm_label": "buildgraphify()",
+          "source_file": "graphify.go",
+          "source_location": "L210"
+        }
+      },
+      {
+        "id": "graphify_hassuffixany",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "3",
+          "community_name": "Kind Classification Heuristics",
+          "displayname": "hasSuffixAny()",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "HASSUFFIXANY()",
+          "norm_label": "hassuffixany()",
+          "source_file": "graphify.go",
+          "source_location": "L546"
+        }
+      },
+      {
+        "id": "main_processedgecsv",
+        "kinds": [
+          "AsyncFunction",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "_origin": "ast",
+          "community": "6",
+          "community_name": "CSV Processing Pipeline",
+          "displayname": "processEdgeCSV()",
+          "file_type": "code",
+          "kind_heuristic": "async",
+          "name": "PROCESSEDGECSV()",
+          "norm_label": "processedgecsv()",
+          "source_file": "main.go",
+          "source_location": "L413"
+        }
+      },
+      {
+        "id": "readme_og",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "community": "1",
+          "community_name": "README Concepts \u0026 Ecosystem",
+          "displayname": "og OpenGraph JSON Builder",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "OG OPENGRAPH JSON BUILDER",
+          "norm_label": "og opengraph json builder",
+          "source_file": "README.md"
+        }
+      },
+      {
+        "id": "readme_gopengraph",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "community": "1",
+          "community_name": "README Concepts \u0026 Ecosystem",
+          "displayname": "gopengraph Library",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "GOPENGRAPH LIBRARY",
+          "norm_label": "gopengraph library",
+          "source_file": "README.md",
+          "source_url": "https://github.com/TheManticoreProject/gopengraph"
+        }
+      },
+      {
+        "id": "readme_graphify",
+        "kinds": [
+          "Function",
+          "OGSelfGraph"
+        ],
+        "properties": {
+          "community": "1",
+          "community_name": "README Concepts \u0026 Ecosystem",
+          "displayname": "graphify Knowledge Graph Tool",
+          "file_type": "code",
+          "kind_heuristic": "function",
+          "name": "GRAPHIFY KNOWLEDGE GRAPH TOOL",
+          "norm_label": "graphify knowledge graph tool",
+          "source_file": "README.md",
+          "source_url": "https://github.com/Graphify-Labs/graphify"
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "source_kind": "OGSelfGraph"
+  }
+}
