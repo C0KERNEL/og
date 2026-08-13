@@ -63,37 +63,57 @@ func main() {
 	// Parse CSV data
 	var parsedCSVs []*CSVFile
 
-	// If the user routed stdin to the graphify parser ("-g -"), don't also
-	// consume stdin as CSV.
+	// stdin can be claimed by at most one parser: "-g -" routes it to the
+	// graphify parser, "-c -" to the CSV parser.
 	stdinForGraphify := false
 	for _, gf := range graphifyFiles {
 		if gf == "-" {
 			stdinForGraphify = true
 		}
 	}
-
-	// Check if data is being piped via stdin
-	stat, _ := os.Stdin.Stat()
-	if !stdinForGraphify && (stat.Mode()&os.ModeCharDevice) == 0 {
-		// Data is being piped
-		csvData, err := parseCSVFromReader(os.Stdin)
-		if err != nil {
-			fmt.Fprintf(os.Stderr, "Error reading from stdin: %v\n", err)
-			os.Exit(1)
+	stdinForCSV := false
+	for _, cf := range csvFiles {
+		if cf == "-" {
+			stdinForCSV = true
 		}
-		parsedCSVs = append(parsedCSVs, csvData...)
+	}
+	if stdinForGraphify && stdinForCSV {
+		fmt.Fprintf(os.Stderr, "Error: '-' given to both --csv and --graphify; stdin can only be read once\n")
+		os.Exit(1)
 	}
 
-	// Process files from command-line arguments
-	for _, csvFile := range csvFiles {
-		file, err := os.Open(csvFile)
-		if err != nil {
-			fmt.Fprintf(os.Stderr, "Error opening file %s: %v\n", csvFile, err)
-			os.Exit(1)
+	// Implicit stdin-as-CSV applies only when no input flags were given at all.
+	// With -c/-g present, stdin is read only on an explicit '-': a blocking read
+	// on an inherited-but-idle pipe (scripts, CI) would otherwise hang the run.
+	if len(csvFiles) == 0 && len(graphifyFiles) == 0 {
+		stat, _ := os.Stdin.Stat()
+		if (stat.Mode() & os.ModeCharDevice) == 0 {
+			// Data is being piped
+			csvData, err := parseCSVFromReader(os.Stdin)
+			if err != nil {
+				fmt.Fprintf(os.Stderr, "Error reading from stdin: %v\n", err)
+				os.Exit(1)
+			}
+			parsedCSVs = append(parsedCSVs, csvData...)
 		}
+	}
 
-		csvData, err := parseCSVFromReader(file)
-		file.Close()
+	// Process files from command-line arguments ('-' reads CSV from stdin)
+	for _, csvFile := range csvFiles {
+		var csvData []*CSVFile
+		var err error
+
+		if csvFile == "-" {
+			csvData, err = parseCSVFromReader(os.Stdin)
+		} else {
+			file, openErr := os.Open(csvFile)
+			if openErr != nil {
+				fmt.Fprintf(os.Stderr, "Error opening file %s: %v\n", csvFile, openErr)
+				os.Exit(1)
+			}
+			csvData, err = parseCSVFromReader(file)
+			file.Close()
+		}
 
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "Error parsing file %s: %v\n", csvFile, err)

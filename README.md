@@ -33,6 +33,11 @@ Process CSV files via pipeline:
 cat nodes.csv edges.csv | og > output.json
 ```
 
+Piped stdin is read as CSV automatically only when no input flags are given.
+Once any `-c`/`--csv` or `-g`/`--graphify` flag is present, stdin is consumed
+only where an explicit `-` appears — so scripted runs never block on an idle
+inherited pipe.
+
 Process CSV files via command-line arguments:
 ```bash
 og -c nodes.csv -c edges.csv > output.json
@@ -117,10 +122,11 @@ og --graphify graph.json --source_kind Graphify > opengraph.json
 cat graph.json | og -g - -s Graphify > opengraph.json      # '-' reads JSON from stdin
 ```
 
-You can mix graphify and CSV inputs in one run (IDs are shared across both):
+You can mix graphify and CSV inputs in one run (IDs are shared across both).
+When any `-c`/`-g` flag is present, stdin is only read on an explicit `-`:
 
 ```bash
-cat extra_nodes.csv | og -g graph.json -c more_edges.csv -s Combined > opengraph.json
+cat extra_nodes.csv | og -g graph.json -c - -c more_edges.csv -s Combined > opengraph.json
 ```
 
 Generate a `graph.json` with graphify first (code-only extraction needs no API key):
@@ -196,7 +202,7 @@ cat testdata/nodes1.csv testdata/nodes2.csv testdata/edges1.csv testdata/edges2.
 
 ## Command-line Options
 
-- `-c, --csv`: CSV file to process (can be specified multiple times)
+- `-c, --csv`: CSV file to process (can be specified multiple times; `-` reads CSV from stdin)
 - `-g, --graphify`: graphify `graph.json` to convert (can be specified multiple times; `-` reads JSON from stdin)
 - `-s, --source_kind`: Source kind for the OpenGraph metadata (optional)
 
